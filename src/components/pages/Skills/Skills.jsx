@@ -5,6 +5,7 @@ import "./Skills.css";
 
 const Skills = () => {
     const images = useData().data.skills.images;
+    const text = useData().data.skills.text;
   return (
     <div className="skills">
       <h1>Skills</h1>
@@ -111,6 +112,7 @@ const Skills = () => {
           </ul>
         </div>
       </div>
+      <h3>{text}</h3>
     </div>
   );
 };

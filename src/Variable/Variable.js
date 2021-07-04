@@ -6,7 +6,8 @@ const header = {
 };
 const home = {
   title: `Hi I'm Shlomo Gangul a Full Stack Developer`,
-  aboutMeText: `A little about me, I like Video Games, Nature and a good coffee`,
+  aboutMeText: `A little about me, I like Video Games, Nature, I believe in hard work and dedication Inpm  love working with people because it open your mind to new ways to find solutions and a good coffee.
+  Im looking for a place to imrove and learn more about development and ways to improve in code and in live `,
   images: {
     img1: "/portfolio/images/oklook1.jpeg",
     img2: "/portfolio/images/oklook2.jpeg",
@@ -34,7 +35,8 @@ const skills = {
     img14: "/portfolio/images/ado-net.jpg",
     img15: "/portfolio/images/visaul-code.png",
     img16: "/portfolio/images/visaul-studio.png",
-  }
+  },
+  text:'Im hard working dedicated and open minded with a creative mind when it comes to finding solutions'
 };
 const portfolio = {  images:{
   img1:"/portfolio/images/portfolio1.PNG",
