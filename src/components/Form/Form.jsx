@@ -1,20 +1,12 @@
-import React, { useRef, useEffect, useState, useReducer } from "react";
+import React, { useRef, useEffect} from "react";
 import "./Form.css";
 import { TextField } from "@material-ui/core";
 import emailjs from "emailjs-com";
+import Input from "../Features/Input/Input";
+import Button from "../Features/Button/Button";
 
-// function reducer(state, action) {
-//   switch (action.type) {
-//     case "send":
-//      useData().setData(state);
-//       return
-//     default:
-//       return state;
-//   }
-// }
 
 function sendEmail(e) {
-//  dispatch('send')
   console.log(e.target);
   emailjs
     .sendForm(
@@ -33,13 +25,8 @@ function sendEmail(e) {
     );
 }
 const Form = () => {
-  const [info, setInfo] = useState({});
   const FucosOnTextInput = useRef(null);
-  //const [state, dispatch] = useReducer(reducer, { info });
-  function setInformation(e) {
-  //  dispatch('send')
-    setInfo({ ...info, [e.target.name]: e.target.value });
-  }
+  
   useEffect(() => {
     FucosOnTextInput.current.focus();
   }, []);
@@ -50,42 +37,21 @@ const Form = () => {
         <label>
           <TextField
             inputRef={FucosOnTextInput}
-            onChange={setInformation}
             name="firstName"
             type="text"
             label="Your first name..."
             id="outlined-textarea"
             multiline
             variant="outlined"
-          />
+            />
         </label>
-        <label>
-          <TextField
-            name="lastName"
-            onChange={setInformation}
-            type="text"
-            label="Your first last name..."
-            id="outlined-textarea"
-            multiline
-            variant="outlined"
-          />
-        </label>
-        <label>
-          <TextField
-            name="email"
-            onChange={setInformation}
-            type="text"
-            label="Example@email.com"
-            id="outlined-textarea"
-            multiline
-            variant="outlined"
-          />
-        </label>
+
+        <Input name="lastName" type="text" label="Your first last name..." id="outlined-textarea" variant="outlined"/>
+        <Input name="email" type="email" label="Example@email.com" id="outlined-textarea" variant="outlined"/>
 
         <label>
           <TextField
             name="Massge"
-            onChange={setInformation}
             id="outlined-multiline-static"
             cols="30"
             label="Your Massge Goes Here..."
@@ -94,7 +60,7 @@ const Form = () => {
             variant="outlined"
           />
         </label>
-        <button type="click">SEND</button>
+        <Button type="submit" text="SEND"/>
       </form>
     </>
   );

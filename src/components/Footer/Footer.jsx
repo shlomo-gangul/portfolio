@@ -4,39 +4,31 @@ import FacebookIcon from "@material-ui/icons/Facebook";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GitHubIcon from "@material-ui/icons/GitHub";
+import Link from "../Features/Link/Link";
 
 const Footer = () => {
   return (
     <div className="Footer">
       <div className="iconDiv">
-        <a
+        <Link
           href="https://www.facebook.com/shlomo.gangul.3/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FacebookIcon fontSize="large" />
-        </a>
-        <a
+          content={<FacebookIcon fontSize="large" />}
+        />
+
+        <Link
           href="https://www.instagram.com/shlomo_gangul/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <InstagramIcon fontSize="large" />
-        </a>
-        <a
+          content={<InstagramIcon fontSize="large" />}
+        />
+
+        <Link
           href="https://www.linkedin.com/in/shlomo-gangul/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <LinkedInIcon fontSize="large" />
-        </a>
-        <a
+          content={<LinkedInIcon fontSize="large" />}
+        />
+
+        <Link
           href="https://github.com/SlumpG"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <GitHubIcon fontSize="large" />
-        </a>
+          content={<GitHubIcon fontSize="large" />}
+        />
       </div>
     </div>
   );

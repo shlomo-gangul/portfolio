@@ -1,7 +1,9 @@
 import React from "react";
 import useData from "../../../Context/Context";
 import GitHubIcon from "@material-ui/icons/GitHub";
+import Link from "../../Features/Link/Link";
 import "./portfolio.css";
+
 
 const Portfolio = () => {
   const images = useData().data.portfolio.images;
@@ -13,13 +15,12 @@ const Portfolio = () => {
         <div className="imgDiv2">
           <img src={images.img3} alt="" />
           <div className="textDiv2">
-            <a
+           <Link
               href="https://slumpg.github.io/Fake-Site"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <GitHubIcon style={{ color: "white" }} />
-            </a>
+              content={<GitHubIcon style={{ color: "white" }} />}
+            />
+              
+            
             <p>
               An example lending page for a company 
             </p>
@@ -30,13 +31,10 @@ const Portfolio = () => {
         <div className="imgDiv2">
           <img src={images.img1} alt="" />
           <div className="textDiv2">
-            <a
+           <Link
               href="https://slumpg.github.io/KAPARA/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <GitHubIcon style={{ color: "white" }} />
-            </a>
+            content={<GitHubIcon style={{ color: "white" }} />}
+            />
             <p>
               Kapra is a way of living and this is a site made for kaparas
               around the world to come and learn about the kapara way
@@ -46,13 +44,10 @@ const Portfolio = () => {
         <div className="imgDiv2">
           <img src={images.img2} alt="" />
           <div className="textDiv2">
-            <a
+           <Link
               href="https://github.com/SlumpG/movies"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <GitHubIcon style={{ color: "white" }} />
-            </a>
+              content={<GitHubIcon style={{ color: "white" }} />}
+            />
             <p>same as any other movie site</p>
           </div>
         </div>

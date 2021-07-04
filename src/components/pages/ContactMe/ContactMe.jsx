@@ -64,7 +64,7 @@ const ContactMe = () => {
       </Button>
       <Dialog onClose={handleClose} aria-labelledby="customized-dialog-title" open={open}>
         <DialogTitle id="customized-dialog-title" onClose={handleClose}>
-          Dont look <img style={{height:'20px'}} src="\images\indi.jpeg" alt="" />
+          Dont look <img  src={images.img2} alt="" />
         </DialogTitle>
         <img src={images.img1} alt="" />
         <DialogContent dividers>

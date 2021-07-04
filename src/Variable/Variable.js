@@ -42,7 +42,8 @@ const portfolio = {  images:{
   img3:"/portfolio/images/portfolio3.jpeg",
 }};
 const contactMe = {images:{
-  img1:"/portfolio/images/topSecret.gif",},
+  img1:"/portfolio/images/topSecret.gif",
+  img2:"/portfolio/images/indi.jpeg"},
 users:{}};
 export function DATA() {
   const  [data, setData] = useState({ header, home, skills, portfolio, contactMe })
