@@ -1,0 +1,28 @@
+.portfolio{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 60vw;
+    height: 100vh;
+    margin:20px 0;
+    height: 100%;
+    color: #000;
+}
+
+.imgDiv2{
+    margin:20px 0;
+    width: 50vw;
+    background: #5C8D89;
+ border-radius: 0 0 5px 5px;
+}
+.imgDiv2 img {
+    width: 100%;
+}
+.textDiv2{
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: space-around; 
+    color: white;
+}

@@ -1,0 +1,13 @@
+.iconDiv {
+  height: 64px;
+  min-width: 60vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.iconDiv>*{
+    margin: 0 20px;
+    text-decoration: none;
+    color: white;
+}

@@ -1,0 +1,19 @@
+.skills{
+    color: #5C8D89;
+    text-align: center;
+    height: 100vh;
+}
+.flexItUp{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.imgDiver{
+    height: 50px;
+}
+.imgDiver img{
+    height: 100%;
+}
+ul {
+    list-style-type: none;
+}
