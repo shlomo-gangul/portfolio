@@ -7,13 +7,38 @@ import SideBar from "./components/SideBar/SideBar";
 import { DataProvider } from "./Context/Context";
 import {DATA} from './Variable/Variable'
 import "./App.css";
+import { useReducer } from "react";
+const theme ={theme:false}
+
+const reducer = (state,action)=>{
+  switch(action.type){
+    case 'themeMode':
+      const newTheme = !state.theme
+      return {...state,theme:newTheme}
+      default:
+        return state.theme
+  }
+}
+
+
+
 
 function App() {
+  const [themeState,dispatch] = useReducer(reducer,theme.theme)
+
+  const nightModeSwitch = ()=>{
+    const action= {
+      type: 'themeMode'
+    }
+    dispatch(action)
+  }
+ let data = {data:DATA(),
+    themeReducer:{themeState,dispatch}}
   return (
     <div className="App">
-      <DataProvider value={DATA()}>
+    <DataProvider value={data}>
       <Router>
-        <Header />
+        <Header nightModeSwitch={nightModeSwitch} />
         <div className="SideBar">
           <SideBar />
         </div>

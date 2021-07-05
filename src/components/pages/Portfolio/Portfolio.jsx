@@ -6,7 +6,7 @@ import "./portfolio.css";
 
 
 const Portfolio = () => {
-  const images = useData().data.portfolio.images;
+  const images = useData().data.data.portfolio.images;
 
   return (
     <div className="portfolio">

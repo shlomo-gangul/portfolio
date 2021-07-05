@@ -4,8 +4,8 @@ import "./Skills.css";
 
 
 const Skills = () => {
-    const images = useData().data.skills.images;
-    const text = useData().data.skills.text;
+    const images = useData().data.data.skills.images;
+    const text = useData().data.data.skills.text;
   return (
     <div className="skills">
       <h1>Skills</h1>
