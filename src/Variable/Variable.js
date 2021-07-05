@@ -47,8 +47,13 @@ const contactMe = {images:{
   img1:"/portfolio/images/topSecret.gif",
   img2:"/portfolio/images/indi.jpeg"},
 users:{}};
+const theme={
+  background:'black',
+  color:'white',
+} 
+
 export function DATA() {
-  const  [data, setData] = useState({ header, home, skills, portfolio, contactMe })
+  const  [data, setData] = useState({ header, home, skills, portfolio, contactMe ,theme})
   return {data,setData}  
 }
 

@@ -11,11 +11,11 @@ import "react-vertical-timeline-component/style.min.css";
 import "./Home.css";
 
 const Home = () => {
-  const title = useData().data.home.title;
-  const aboutMeText = useData().data.home.aboutMeText;
-  const images = useData().data.home.images;
-  const cardText = useData().data.home.cardText;
-  console.log(images);
+  const title = useData().data.data.home.title;
+  const aboutMeText = useData().data.data.home.aboutMeText;
+  const images = useData().data.data.home.images;
+  const cardText = useData().data.data.home.cardText;
+
   return (
     <div className="Home">
       <h1 className="homeH1">{title}</h1>

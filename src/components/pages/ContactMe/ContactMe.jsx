@@ -46,7 +46,7 @@ const DialogContent = withStyles((theme) => ({
 
 
 const ContactMe = () => {
-    const images = useData().data.contactMe.images;
+    const images = useData().data.data.contactMe.images;
 
     const [open, setOpen] = useState(false);
 

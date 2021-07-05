@@ -4,9 +4,9 @@ import Link from "../Features/Link/Link";
 import "./NavBar.css";
 
 const NavBar = () => {
-  const fullname = useData().data.header.fullname;
-  const email = useData().data.header.email;
-  const img = useData().data.header.img;
+  const fullname = useData().data.data.header.fullname;
+  const email = useData().data.data.header.email;
+  const img = useData().data.data.header.img;
   return (
     <div className="NavBar">
       <div>
