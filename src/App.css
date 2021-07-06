@@ -8,26 +8,14 @@
   flex-direction: column;
   align-items: center;
 }
-.Header {
-  color: white;
-  width: 99vw;
-  min-height: 64px;
-  background:#5C8D89;
-}
+
 .Body {
   color: white;
   min-width: 60vw;
   height: 70%;
   background:#F4F9F4;
 }
-.Footer {
-  color: white;
-  width: 99vw;
-  min-height: 64px;
-  bottom: 0px;
-  background:#5C8D89;
-  text-align: center;
-}
+
 .SideBar {
    
   position: fixed;

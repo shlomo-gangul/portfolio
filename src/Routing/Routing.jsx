@@ -12,9 +12,9 @@ console.log(theme.theme);
   return (
     <div style={{background:`${theme.theme?'black':'#F4F9F4'}`}}>
       <Switch>
-        <Redirect to="/Home">
+      <Route exact path="/">
           <Home />
-        </Redirect>
+        </Route>
         <Route path="/Skills">
           <Skills />
         </Route>
@@ -27,6 +27,7 @@ console.log(theme.theme);
         <Route path="/Home">
           <Home />
         </Route>
+        <Redirect to="/"/>
       </Switch>
     </div>
   );

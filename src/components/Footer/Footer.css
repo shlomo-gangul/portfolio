@@ -1,3 +1,12 @@
+.Footer {
+  color: white;
+  width: 99vw;
+  min-height: 64px;
+  bottom: 0px;
+  background:#5C8D89;
+  text-align: center;
+}
+
 .iconDiv {
   height: 64px;
   min-width: 60vw;

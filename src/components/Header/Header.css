@@ -1,0 +1,18 @@
+.Header {
+    color: white;
+    width: 99vw;
+    min-height: 64px;
+    background:#5C8D89;
+  }
+
+.button{
+    position:absolute;
+    background:transparent;
+    border: none;
+
+
+}
+.button:hover{
+        cursor: pointer;
+        transform: scale(1.1);
+}
