@@ -1,5 +1,5 @@
 import React from "react";
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, Redirect } from "react-router-dom";
 import Home from "../components/pages/Home/Home";
 import Skills from "../components/pages/Skills/Skills";
 import Portfolio from "../components/pages/Portfolio/Portfolio";
@@ -12,9 +12,9 @@ console.log(theme.theme);
   return (
     <div style={{background:`${theme.theme?'black':'#F4F9F4'}`}}>
       <Switch>
-        <Route exact path="/">
+        <Redirect to="/Home">
           <Home />
-        </Route>
+        </Redirect>
         <Route path="/Skills">
           <Skills />
         </Route>
